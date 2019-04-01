@@ -1,0 +1,36 @@
+{
+  "name": "issue-tracker",
+  "version": "0.0.1",
+  "description": "RESTful API to manage and maintain lists of bugs and feature requests.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "dev": "cross-env NODE_ENV=test PORT=3000 DB_URL=mongodb://localhost:27017/issue-tracker DB_NAME=issue-tracker nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisediniz/issue-tracker.git"
+  },
+  "author": "Denise Diniz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denisediniz/issue-tracker/issues"
+  },
+  "homepage": "https://github.com/denisediniz/issue-tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.16.0",
+    "mongodb": "^3.2.2",
+    "swagger-jsdoc": "^3.2.8"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "cross-env": "^5.2.0",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
+  }
+}
